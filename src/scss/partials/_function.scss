@@ -1,0 +1,7 @@
+@mixin btn_color ($color){
+    background-color : $color;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color : darken($color, 20%);
+    }
+}

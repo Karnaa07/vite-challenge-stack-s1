@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/main.css">
+    <title>SpaceTraveler</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar"> 
+        <a href="index.html" class="logo"><img src="assets/logo.svg"></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="maps.html" class="link">MAPS</a></li>
+            <li><a href="#Planètes" class="link">PLANÈTES</a></li>
+            <li><a href="us.html" class="link">À PROPOS</a></li>
+            <li><a href="#Contact" class="button">CONTACTER NOUS</a></li>
+          </ul>
+        </div>
+        <img src="assets/navbar/burgerside.svg" alt="menu hamburger" class="menu-hamburger">
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1">
+        <div class="container">
+          <div>
+            <h1>Bienvenue sur SpaceTraveler.
+              <br>Venez vivre une expérience hors du commun</h1>
+          </div>
+        </div>
+      </section>
+      
+      <a name="Planètes"></a>
+      <section class="cards">
+        <div class="cards-container">
+            <div class="container-flex">
+                <div class="card">
+                    <div class="planete" id="soleil">
+                    </div>
+                    <div class="titre">SOLEIL 1</div>
+                    <div class="information">
+                        <div class="description">
+                            <div class="description-line">
+                                <span class="opt">Superficie :</span>
+                                <span class="numerals">6.087 Md</span>
+                                <span class="numerals">KM²</span>
+                            </div>
+                            <div class="description-line">
+                                <span class="opt">Distance :</span>
+                                <span class="numerals">150 M</span>
+                                <span class="numerals">KM</span>
+                            </div>
+                        </div>
+                        <a href="maps.html" class="btn btn-main">En Savoir Plus</a>
+                    </div>
+                    <div class="astronaute">
+                        <!-- <img src="/img/astronaute.png" alt=""> -->
+                    </div>
+                    <div class="arrow">
+                        <img src="/assets/card/arrow-right.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="planete">
+                    </div>
+                    <div class="titre">SOLEIL 2</div>
+                    <div class="information">
+                        <div class="description">
+                            <div class="description-line">
+                                <span class="opt">Superficie :</span>
+                                <span class="numerals">6.087 Md</span>
+                                <span class="numerals">KM²</span>
+                            </div>
+                            <div class="description-line">
+                                <span class="opt">Distance :</span>
+                                <span class="numerals">150 M</span>
+                                <span class="numerals">KM</span>
+                            </div>
+                        </div>
+                        <a href="maps.html" class="btn btn-main">En Savoir Plus</a>
+                    </div>
+                    <div class="astronaute">
+                    </div>
+                    <div class="arrow">
+                        <img src="/assets/card/arrow-right.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="planete">
+                    </div>
+                    <div class="titre">SOLEIL 3</div>
+                    <div class="information">
+                        <div class="description">
+                            <div class="description-line">
+                                <span class="opt">Superficie :</span>
+                                <span class="numerals">6.087 Md</span>
+                                <span class="numerals">KM²</span>
+                            </div>
+                            <div class="description-line">
+                                <span class="opt">Distance :</span>
+                                <span class="numerals">150 M</span>
+                                <span class="numerals">KM</span>
+                            </div>
+                        </div>
+                        <a href="maps.html" class="btn btn-main">En Savoir Plus</a>
+                    </div>
+                    <div class="astronaute">
+                    </div>
+                    <div class="arrow">
+                        <img src="/assets/card/arrow-right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cta p-2">
+          <div class="cta-container">
+            <button class="left">+</button>
+            <div class="center"><button>HELLO</button></div>
+            <button class="right">></button>
+          </div>
+        </div>
+      </section>
+      
+      <a name="Contact"></a>
+      <section id="section3">
+        <div class="container">
+          <form>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom"><br><br>
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom"><br><br>
+            <label for="adresse_email">Adresse e-mail:</label>
+            <input type="email" id="adresse_email" name="adresse_email"><br><br>
+            <label for="telephone">Numéro de téléphone:</label>
+            <input type="tel" id="telephone" name="telephone"><br><br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea><br><br>
+            <input type="submit" value="Soumettre">
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="us.html">À propos de nous</a></li>
+            <li><a href="#">© 2023 SpaceTraveler</a></li>
+            <li><a href="#Contact">Nous contacter</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+  </body>
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger")
+      const navLinks = document.querySelector(".nav-links")
+
+      menuHamburger.addEventListener('click', ()=>{
+      navLinks.classList.toggle('mobile-menu')
+      })
+    </script>
+</html>
