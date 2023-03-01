@@ -173,12 +173,16 @@ header{
 /*Footer*/
 
 body > footer {
-	padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+	height: 300px;
 	background-color: $main-brown;
 	font-size: 14px;
+    overflow: hidden;
 }
 
 body > footer .container {
+    position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -199,3 +203,121 @@ body > footer li a{
     color: $main-white;
 }
 
+.footer_logo{
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 35%);
+    width: 12vw;
+}
+
+.footer_lune{
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: translate(-190%, 80%);
+    width: 17vw;
+}
+
+
+
+/* Espace Form CSS */
+
+form {
+    position: relative;
+    padding-top: 50px;
+    right: 40%;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4d4dff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0000ff;
+  }
+  
+  /* Form fields */
+  
+  label[for="nom"] {
+    color: $main-dark;
+  }
+  
+  input#nom {
+    background-color: transparent;
+    border-color: $main-dark;
+    color: $main-dark;
+  }
+  
+  label[for="prenom"] {
+    color: $main-dark;
+  }
+  
+  input#prenom {
+    background-color: transparent;
+    border-color: $main-dark;
+    color: $main-dark;
+  }
+  
+  label[for="adresse_email"] {
+    color: $main-dark;
+  }
+  
+  input#adresse_email {
+    background-color: transparent;
+    border-color: $main-dark;
+    color: $main-dark;
+  }
+  
+  label[for="telephone"] {
+    color: $main-dark;
+  }
+  
+  input#telephone {
+    background-color: transparent;
+    border-color: $main-dark;
+    color: $main-dark;
+  }
+  
+  label[for="description"] {
+    color: $main-dark;
+  }
+  
+  textarea#description {
+    background-color: transparent;
+    border-color: $main-dark;
+    color: $main-dark;
+  }
+  
