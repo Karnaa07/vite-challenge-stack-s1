@@ -1,0 +1,44 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 1 0 33.33%;
+}
+
+@media (max-width: 1024px) {
+    .carousel-item {
+        flex: 1 0 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .carousel-item {
+        flex: 1 0 100%;
+    }
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}

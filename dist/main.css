@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,600;0,700;0,800;1,400&display=swap"); /*PADDING*/
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,600;0,700;0,800;1,400&display=swap");
 .p-1 {
   padding: 0.25rem;
 }
@@ -870,20 +869,10 @@ textarea#description {
   background-color: #c3c3c3;
 }
 
-*, ::before, ::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .container-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.planete#soleil {
-  background-image: url("/assets/card/soleil.svg");
 }
 
 a:hover {
@@ -961,14 +950,16 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 .card .planete {
+  position: relative;
   top: 0;
   right: 0;
   position: absolute;
   transform: translate(50%, -50%) rotate(-45deg);
+  transition: all 0.5s ease-in-out;
+}
+.card .planete img {
   height: 200px;
   width: 200px;
-  background-image: url("/assets/card/soleil.svg");
-  background-size: cover;
   transition: all 0.5s ease-in-out;
 }
 .card .description {
@@ -999,10 +990,11 @@ a:hover {
   top: 25%;
   right: auto;
   left: 50%;
-  position: absolute;
   transform: translate(-50%, -50%) rotate(0deg);
-  height: 250px;
+}
+.card:hover .planete img {
   width: 250px;
+  height: 250px;
 }
 .card:hover .titre {
   font-size: 2rem;
@@ -1031,32 +1023,6 @@ a:hover {
   transform: rotate(0deg);
 }
 
-.cta {
-  color: #F6F6F6;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.cta button {
-  padding: 0.2rem 0.5rem;
-}
-
-.cta-container {
-  display: flex;
-  justify-content: space-between;
-}
-.cta-container .left {
-  display: flex;
-  justify-content: flex-start;
-}
-.cta-container .center {
-  display: flex;
-  justify-content: center;
-}
-.cta-container .right {
-  display: flex;
-  justify-content: flex-end;
-}
-
 @media screen and (min-width: 1024px) {
   .main-col {
     max-width: 1100px;
@@ -1066,10 +1032,8 @@ a:hover {
 }
 @media screen and (min-width: 769px) {
   .card {
-    flex: 0 0 auto;
-    width: calc(33.3333333333% - 1rem);
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 1rem;
   }
   .card .numerals {
     font-size: 1rem;
@@ -1077,18 +1041,14 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .card {
-    flex: 0 0 auto;
     padding: 1rem;
-    margin: 0.5rem;
-    width: calc(50% - 1rem);
+    margin: 1rem;
   }
 }
 @media screen and (max-width: 450px) {
   .card {
-    flex: 0 0 auto;
-    width: calc(100% - 1rem);
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 1rem;
   }
   .card .description-line {
     gap: 0.3rem;
@@ -1112,6 +1072,49 @@ a:hover {
 }
 .link:hover::after {
   transform: scaleX(100%);
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 1 0 33.33%;
+}
+
+@media (max-width: 1024px) {
+  .carousel-item {
+    flex: 1 0 50%;
+  }
+}
+@media (max-width: 450px) {
+  .carousel-item {
+    flex: 1 0 100%;
+  }
+}
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

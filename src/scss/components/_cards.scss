@@ -1,23 +1,9 @@
-*, ::before, ::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,600;0,700;0,800;1,400&display=swap');
-
-$transition : all .5s ease-in-out;
+$transition-card : all .5s ease-in-out;
 
 .container-flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.planete{
-    &#soleil{
-        background-image: url("/assets/card/soleil.svg");
-    }
 }
 
 a{
@@ -28,7 +14,6 @@ a{
 
 .cards{
     background-color: $main-blue;
-    
 }
 
 .cards-container{
@@ -43,7 +28,7 @@ a{
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
-    transition: $transition;
+    transition: $transition-card;
 
     & .information{ 
         display: flex;
@@ -54,7 +39,7 @@ a{
         left: 50%;
         top: 150%;
         transform: translate(-50%, -50%);
-        transition: $transition;
+        transition: $transition-card;
         color: $main-white;
         gap: 2rem;
         width: 100%;
@@ -72,7 +57,7 @@ a{
         background-color : $main-purple;
         padding: 1rem 1.5rem;
         border-radius: .5rem;
-        transition: $transition;
+        transition: $transition-card;
         
         &:hover{
             background-color: darken($main-purple, 20%);
@@ -83,7 +68,7 @@ a{
         position: absolute;
         bottom: 0%;
         left: 0%;
-        transition: $transition;
+        transition: $transition-card;
         background-image: url("/assets/card/astronaute.png");
         background-size: cover;
         width: 100px;
@@ -96,7 +81,7 @@ a{
         justify-content: center;
         color: $main-white;
         font-size: 1.5rem;
-        transition: $transition;
+        transition: $transition-card;
         position: absolute;
         top: 55%;
         left: 50%;
@@ -104,15 +89,18 @@ a{
     }
 
     & .planete{
+        position: relative;
         top: 0;
         right: 0;
         position: absolute;
         transform: translate(50%, -50%) rotate(-45deg);
-        height: 200px;
-        width: 200px;
-        background-image: url("/assets/card/soleil.svg");
-        background-size: cover;
-        transition: $transition;
+        transition: $transition-card;
+
+        & img{
+            height: 200px;
+            width: 200px;
+            transition: $transition-card;
+        }
     }
 
     & .description{
@@ -137,7 +125,7 @@ a{
         bottom: 5%;
         left: 50%;
         transform: translate(-50%, 0)rotate(-90deg);
-        transition: $transition;
+        transition: $transition-card;
 
         & img{
             width: 50px;
@@ -149,10 +137,13 @@ a{
             top: 25%;
             right: auto;
             left: 50%;
-            position: absolute;
             transform: translate(-50%, -50%) rotate(0deg);
-            height: 250px;
-            width: 250px;
+
+            & img{
+
+                width: 250px;
+                height: 250px;
+            }
         }
 
         & .titre{
@@ -188,36 +179,6 @@ a{
     }
 }
 
-.cta{
-    color : $main-white;
-    max-width: 500px ;
-    margin : 0 auto;
-
-    & button{
-        padding : .2rem .5rem;
-    }
-}
-
-.cta-container{
-    display: flex;
-    justify-content: space-between;
-
-    & .left{
-        display: flex;
-        justify-content : flex-start;
-    }
-
-    & .center{
-        display: flex;
-        justify-content : center;
-    }       
-
-    & .right{
-        display: flex;
-        justify-content : flex-end;
-    }
-}
-
 @media screen and (min-width:1024px){
     .main-col{
         max-width: 1100px;
@@ -228,10 +189,8 @@ a{
 
 @media screen and (min-width: 769px){
     .card{
-        flex : 0 0 auto;
-        width: calc(100%/3 - 1rem);
         padding: 1rem;
-        margin : .5rem;
+        margin : 1rem;
 
         & .numerals{
             font-size: 1rem;
@@ -241,20 +200,16 @@ a{
 
 @media screen and (max-width: 768px){
     .card{
-        flex : 0 0 auto;
         padding: 1rem;
-        margin : .5rem;
-        width: calc(50% - 1rem);
+        margin : 1rem;
     }
 }
 
 
 @media screen and (max-width: 450px){
     .card{
-        flex : 0 0 auto;
-        width: calc(100% - 1rem);
         padding: 1rem;
-        margin : .5rem;
+        margin : 1rem;
         & .description-line{
             gap:.3rem;
         }
