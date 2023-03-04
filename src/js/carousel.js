@@ -1,5 +1,6 @@
 const carousel = document.querySelector('.carousel');
 const carouselInner = document.querySelector('.carousel-container');
+console.log(carouselInner.children.HTMLCollection);
 const prevButton = document.querySelector('.carousel-prev');
 const nextButton = document.querySelector('.carousel-next');
 
@@ -9,12 +10,12 @@ let cardCount;
 function updateCarousel() {
   const width = carousel.clientWidth;
   let itemCount;
-  if (width >= 992) {
+  if (width >= 1024) {
     itemCount = 3;
-  } else if (width >= 768) {
+  } else if (width >=450) {
     itemCount = 2;
   } else {
-    itemCount = 1;
+    itemCount = 3;
   }
   cardCount = Math.ceil(carouselInner.children.length / itemCount);
   carouselInner.style.width = `${cardCount * 100}%`;
