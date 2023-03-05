@@ -16,10 +16,8 @@ fetch("/data/data.json")
   
   // Rechercher l'objet correspondant à la planète avec le nom donné
   const planete = data.planetes.find(p => p.nom === nomPlanete);
-  console.log(planete)
   // Récupérer le nom de la planète
   const nom = planete.nom;
-  console.log(nom)
   // Afficher le nom de la planète dans la console
   if(nomPlanete == nom){
     console.log("ok");
