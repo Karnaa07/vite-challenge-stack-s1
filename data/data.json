@@ -1,0 +1,187 @@
+{
+    "planetes":[
+        {
+            "id": "1",
+            "nom" :"Soleil",
+            "image" :"/assets/planets/map/soleil.svg",
+            "superficie" : "6.087 Md",
+            "distance" : "150 M",
+            "url":"maps/planete.html?nom=Soleil",
+            "caracteristiques" : [
+                {
+                    "caracteristique_1" : "5 778°C",
+                    "caracteristique_1_description": "Le Soleil est une étoile de type naine jaune située près de la Terre.",
+                    "caracteristique_2" : "Hydrogène",
+                    "caracteristique_2_description": "C'est la source principale d'énergie pour notre système solaire, produisant de la lumière et de la chaleur.",
+                    "caracteristique_3" : "Non",
+                    "caracteristique_3_description": "Il est composé principalement d'hydrogène et d'hélium en train d'être brûlés pour produire de l'énergie.",
+                    "caracteristique_4" : "Gazeuse <br>Fusion nucléaire",
+                    "caracteristique_4_description": "Dans environ 5 milliards d'années, le Soleil aura consommé tout son hydrogène."
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "nom" :"Mercure",
+            "image" :"/assets/planets/map/mercure.svg",
+            "superficie" : "74.8 M",
+            "distance" : "91.69 M",
+            "url":"maps/planete.html?nom=Mercure",
+            "caracteristiques" : [
+                {
+                    "caracteristique_1" : "473°C",
+                    "caracteristique_1_description": "Mercure est le plus proche planète du Soleil dans le système solaire.",
+                    "caracteristique_2" : "Roche Silicate",
+                    "caracteristique_2_description": "Il est connu pour son court cycle de rotation et sa petite taille comparativement aux autres planètes. ",
+                    "caracteristique_3" : "Non",
+                    "caracteristique_3_description": "Mercure a une surface rocheuse et des plaines lisses, ainsi que des montagnes et des cratères dus à des impacts météoritiques.",
+                    "caracteristique_4" : "Rocheuse",
+                    "caracteristique_4_description": "C'est la deuxième planète la plus dense du système solaire après la Terre."
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "nom" :"Vénus",
+            "image" :"/assets/planets/map/venus.svg",
+            "superficie" : "460.2 M",
+            "distance" : "41.40 M",
+            "url":"maps/planete.html?nom=Venus",
+            "caracteristiques" : [
+                {
+                    "caracteristique_1" : "463°C",
+                    "caracteristique_1_description": "Vénus est la deuxième planète du système solaire et est connue pour être la planète la plus chaude.",
+                    "caracteristique_2" : "Roche silicate",
+                    "caracteristique_2_description": "Sa surface est couverte de volcans actifs et de plaines de lave.",
+                    "caracteristique_3" : "Non",
+                    "caracteristique_3_description": "Vénus a une atmosphère très dense composée de dioxyde de carbone et de nuages ​​de sulfure dioxyde.",
+                    "caracteristique_4" : "Rocheuse",
+                    "caracteristique_4_description": "Ce qui rend la planète invisible depuis la Terre."
+                }
+            ]
+        }
+        ,
+        {
+            "id": "4",
+            "nom" :"Terre",
+            "image" :"/assets/planets/map/terre.svg",
+            "superficie" : "510.1 M",
+            "distance" : "0",
+            "url":"maps/planete.html?nom=Terre",
+            "caracteristiques" : [
+                {
+                    "caracteristique_1" : "15°C",
+                    "caracteristique_1_description": "La Terre est la troisième planète du système solaire et est la seule connue pour abriter la vie.",
+                    "caracteristique_2" : "Eau, roche et plante",
+                    "caracteristique_2_description": "Elle est dotée d'un champ magnétique qui la protège des radiations solaires dangereuses.",
+                    "caracteristique_3" : "Eau",
+                    "caracteristique_3_description": "La Terre est recouverte de vastes océans et de continents diversifiés avec des écosystèmes variés.",
+                    "caracteristique_4" : "Oxygène 20%",
+                    "caracteristique_4_description": " Elle est également enveloppée d'une atmosphère qui contrôle le climat et permet la vie."
+                }
+            ]
+        }
+        ,
+        {
+            "id": "5",
+            "nom" :"Mars",
+            "image" :"/assets/planets/map/mars.svg",
+            "superficie" : "144.8 M",
+            "distance" : "78.34 M",
+            "url":"maps/planete.html?nom=Mars",
+            "caracteristiques" : [
+                {
+                    "caracteristique_1" : "18°C",
+                    "caracteristique_1_description": "Mars est la quatrième planète du système solaire et est souvent considérée comme la planète la plus proche de la Terre en termes d'habitabilité potentielle.",
+                    "caracteristique_2" : "Roche basaltique",
+                    "caracteristique_2_description": "Il possède des caractéristiques telles que des volcans, des canyons et des dunes de sable, ainsi que des traces d'eau anciennes et actuelles.",
+                    "caracteristique_3" : "1.5% d’eau",
+                    "caracteristique_3_description": "Mars est également connu pour avoir un petit satellite, Phobos, et un autre plus grand, Deimos.",
+                    "caracteristique_4" : "Oxygène 0.15%",
+                    "caracteristique_4_description": "Les missions spatiales ont montré que Mars pourrait avoir été capable de soutenir la vie dans le passé et suscitent donc l'intérêt pour les futurs projets d'exploration humaine."
+                }
+            ]
+        }
+        ,
+        {
+            "id": "6",
+            "nom" :"Jupiter",
+            "image" :"/assets/planets/map/jupiter.svg",
+            "superficie" : "61.42 Md",
+            "distance" : "628.73 M",
+            "url":"maps/planete.html?nom=Jupiter",
+            "caracteristiques" : [
+                {
+                    "caracteristique_1" : "-128°C",
+                    "caracteristique_1_description": "Jupiter est la cinquième planète du système solaire et la plus massive.",
+                    "caracteristique_2" : "Hydrogène d’hélium",
+                    "caracteristique_2_description": "C'est une planète gazeuse avec une atmosphère composée principalement d'hydrogène et d'hélium.",
+                    "caracteristique_3" : "Glace",
+                    "caracteristique_3_description": "Jupiter a une grande quantité de satellites naturels, y compris les plus connus, les quatre lunes galiléennes, Io, Europe, Ganymède et Callisto.",
+                    "caracteristique_4" : "Gazeuse                                          ",
+                    "caracteristique_4_description": "Les missions spatiales ont révélé que Jupiter a une structure interne complexe et un champ magnétique très puissant."
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "nom" :"Saturne",
+            "image" :"/assets/planets/map/saturne.svg",
+            "superficie" : "42.7 Md",
+            "distance" : "1.275 M",
+            "url":"maps/planete.html?nom=Saturn",
+            "caracteristiques" : [
+                {
+                    "caracteristique_1" : "-125°C",
+                    "caracteristique_1_description": "Saturne est la sixième planète du système solaire et est connue pour ses anneaux, qui sont l'un des objets les plus connus dans le système solaire.",
+                    "caracteristique_2" : "Hydrogène d’hélium",
+                    "caracteristique_2_description": "Saturne est également une planète gazeuse comme Jupiter, avec une atmosphère composée principalement d'hydrogène et d'hélium.",
+                    "caracteristique_3" : "Vapeur de glace",
+                    "caracteristique_3_description": "Elle a également de nombreux satellites naturels, y compris les lunes les plus connues, Titan et Encelade.",
+                    "caracteristique_4" : "Gazeuse",
+                    "caracteristique_4_description": "Saturne est considérée comme la deuxième plus grande planète du système solaire en termes de taille et de masse"
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "nom" :"Uranus",
+            "image" :"/assets/planets/map/uranus.svg",
+            "superficie" : "8.083 Md",
+            "distance" : "2.723 M",
+            "url":"maps/planete.html?nom=Uranus",
+            "caracteristiques" : [
+                {
+                    "caracteristique_1" : "-210°C",
+                    "caracteristique_1_description": "Uranus est la septième planète du système solaire et est connue pour être inclinée sur le côté, ce qui lui donne une rotation axiale très excentrique.",
+                    "caracteristique_2" : "Hélium et méthane gazeux",
+                    "caracteristique_2_description": "Uranus est également une planète gazeuse comme Jupiter et Saturne, avec une atmosphère composée principalement d'hydrogène, d'hélium et de méthane.",
+                    "caracteristique_3" : "Glace, ammoniaque",
+                    "caracteristique_3_description": "Il a de nombreux satellites naturels, dont Titania et Oberon, les plus connus.",
+                    "caracteristique_4" : "Gazeuse",
+                    "caracteristique_4_description": "Uranus est considérée comme la troisième plus grande planète du système solaire en termes de taille et de masse."
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "nom" :"Neptune",
+            "image" :"/assets/planets/map/neptune.svg",
+            "superficie" : "7.68 Md",
+            "distance" : "4.351 M",
+            "url":"maps/planete.html?nom=Neptune",
+            "caracteristiques" : [
+                {
+                    "caracteristique_1" : "-200°C",
+                    "caracteristique_1_description": "Neptune est la huitième et dernière planète du système solaire.",
+                    "caracteristique_2" : "Atomes hydrogène et méthane gazeux",
+                    "caracteristique_2_description": " C'est une géante gazeuse similaire à Uranus, avec une atmosphère composée principalement d'hydrogène, d'hélium et de méthane.",
+                    "caracteristique_3" : "Glace",
+                    "caracteristique_3_description": "Neptune est connue pour ses tempêtes complexes et ses couleurs changeantes, ainsi que pour son grand satellite naturel Triton.",
+                    "caracteristique_4" : "Gazeuse",
+                    "caracteristique_4_description": "Neptune est considérée comme la planète la plus éloignée du Soleil dans notre système solaire."
+                }
+            ]
+        }
+    ]
+}

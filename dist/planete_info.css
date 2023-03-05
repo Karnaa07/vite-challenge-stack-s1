@@ -1,0 +1,151 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/assets/background/background_maps.svg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 90%;
+  height: 100vh;
+}
+
+.planete_info_grid {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+  gap: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.planete_info_grid > * {
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+.cta {
+  background-color: transparent;
+  width: 35%;
+}
+.cta figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80% 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 2rem;
+  height: 100%;
+}
+.cta figure img.logo-planete {
+  max-width: 60%;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+.cta figure img.logo-planete:hover {
+  transform: scale(1.2);
+}
+.cta figcaption {
+  width: 30%;
+  margin: 0 auto;
+}
+.cta figcaption a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  background-color: #A11BA4;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.cta figcaption a:hover {
+  background-color: #640F66;
+}
+.cta .arrow-left {
+  transform: rotate(180deg);
+  width: 2rem;
+}
+
+.planete_infos {
+  background: linear-gradient(290.87deg, rgba(236, 108, 47, 0.13) 1.9%, rgba(253, 158, 15, 0.13) 94.88%);
+  backdrop-filter: blur(27px);
+  border: 1px solid rgba(240, 111, 43, 0.431372549);
+  width: 65%;
+  padding: 2rem;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 2rem;
+}
+.planete_infos .title {
+  text-align: center;
+  font-size: 2rem;
+}
+.planete_infos .container-infos-logo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.planete_infos .container-infos-logo .description figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70% 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 1rem;
+  align-items: center;
+}
+.planete_infos .container-infos-logo .description figure img {
+  margin: 0 auto;
+}
+.planete_infos .container-infos-logo .description figcaption {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.planete_infos .container-infos-description {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  gap: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+.planete_infos .container-infos-description .description {
+  border: 1px solid white;
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+.planete_infos .container-infos-description .description p {
+  padding: 1rem 0;
+}
+.planete_infos .description {
+  margin: auto;
+}
+
+/*# sourceMappingURL=planete_info.css.map */

@@ -1,0 +1,191 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/assets/background/background_maps.svg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  padding: 1rem;
+  position: absolute;
+}
+
+.planetes {
+  position: relative;
+}
+
+.planete {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.planete img {
+  transition: all 0.3s ease-in-out;
+}
+
+.planete:nth-child(1) {
+  top: 0;
+  right: 0;
+  transform: translate(40%, -34%) scale(1);
+}
+.planete:nth-child(1) img {
+  width: 20vw;
+}
+.planete:nth-child(1) :hover {
+  transform: scale(1.2);
+}
+
+.planete:nth-child(2) {
+  top: 0;
+  right: 0;
+  transform: translate(-280%, 120%) scale(1);
+}
+.planete:nth-child(2) img {
+  width: 4vw;
+}
+.planete:nth-child(2) :hover {
+  transform: scale(1.2);
+}
+
+.planete:nth-child(3) {
+  top: 0;
+  right: 0;
+  transform: translate(-192%, 121%) scale(1);
+}
+.planete:nth-child(3) img {
+  width: 7vw;
+}
+.planete:nth-child(3) :hover {
+  transform: scale(1.2);
+}
+
+.planete:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: translate(-140%, 60%) scale(1);
+}
+.planete:nth-child(4) img {
+  width: 15vw;
+}
+.planete:nth-child(4) :hover {
+  transform: scale(1.2);
+}
+
+.planete:nth-child(5) {
+  top: 0;
+  right: 0;
+  transform: translate(-270%, 161%) scale(1);
+}
+.planete:nth-child(5) img {
+  width: 10vw;
+}
+.planete:nth-child(5) :hover {
+  transform: scale(1.2);
+}
+
+.planete:nth-child(6) {
+  top: 0;
+  right: 0;
+  transform: translate(-260%, 100%) scale(1);
+}
+.planete:nth-child(6) img {
+  width: 15vw;
+}
+.planete:nth-child(6) :hover {
+  transform: scale(1.2);
+}
+
+.planete:nth-child(7) {
+  top: 0;
+  right: 0;
+  transform: translate(-180%, 165%) scale(1);
+}
+.planete:nth-child(7) img {
+  width: 25vw;
+}
+.planete:nth-child(7) :hover {
+  transform: scale(1.2);
+}
+
+.planete:nth-child(8) {
+  top: 0;
+  right: 0;
+  transform: translate(-410%, 200%) scale(1);
+}
+.planete:nth-child(8) img {
+  width: 16vw;
+}
+.planete:nth-child(8) :hover {
+  transform: scale(1.2);
+}
+
+.planete:nth-child(9) {
+  top: 0;
+  right: 0;
+  transform: translate(-260%, 120%) scale(1);
+}
+.planete:nth-child(9) img {
+  width: 30vw;
+}
+.planete:nth-child(9) :hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .planete:nth-child(1) {
+    top: 0;
+    right: 0;
+    left: auto;
+  }
+  .planete:nth-child(1) img {
+    width: 50vw;
+  }
+  .planete:nth-child(6) {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -350%) scale(1);
+  }
+  .planete:nth-child(6) img {
+    width: 30vw;
+  }
+  .planete:nth-child(7) {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    transform: translate(100%, -220%) scale(1);
+  }
+  .planete:nth-child(7) img {
+    width: 50vw;
+  }
+  .planete:nth-child(8) {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    transform: translate(150%, -110%) scale(1);
+  }
+  .planete:nth-child(8) img {
+    width: 30vw;
+  }
+  .planete:nth-child(9) {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    transform: translate(50%, 400%) scale(1);
+  }
+  .planete:nth-child(9) img {
+    width: 50vw;
+  }
+}
+
+/*# sourceMappingURL=maps.css.map */

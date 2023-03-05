@@ -1,0 +1,219 @@
+$transition-card : all .5s ease-in-out;
+
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.cards{
+    background-color: $main-blue;
+}
+
+.cards-container{
+    background: linear-gradient(180deg, #7F56CC 0%, rgba(13, 7, 75, 0) 25.86%, #342D8C 100%);
+}
+
+.card{
+    background-image: url('/assets/card/bg.png');
+    background-size: cover;
+    height: 500px;
+    max-width: 400px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    transition: $transition-card;
+
+    & .information{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        top: 150%;
+        transform: translate(-50%, -50%);
+        transition: $transition-card;
+        color: $main-white;
+        gap: 2rem;
+        width: 100%;
+
+        & a{
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+    
+    & .btn{
+        text-decoration: none;
+        color : $main-white;
+        background-color : $main-purple;
+        padding: 1rem 1.5rem;
+        border-radius: .5rem;
+        transition: $transition-card;
+        
+        &:hover{
+            background-color: darken($main-purple, 20%);
+        }
+    }
+    
+    & .astronaute{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        transition: $transition-card;
+        background-image: url("/assets/card/astronaute.png");
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+    }
+
+    & .titre{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        color: $main-white;
+        font-size: 1.5rem;
+        transition: $transition-card;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    & .planete{
+        position: relative;
+        top: 0;
+        right: 0;
+        position: absolute;
+        transform: translate(50%, -50%) rotate(-45deg);
+        transition: $transition-card;
+
+        & img{
+            height: 200px;
+            width: 200px;
+            transition: $transition-card;
+        }
+    }
+
+    & .description{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+
+    & .description-line{
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+
+    & .numerals{
+        font-size: 1.2rem;
+    }
+
+    & .arrow{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, 0)rotate(-90deg);
+        transition: $transition-card;
+
+        & img{
+            width: 50px;
+        }
+    }
+
+    &:hover{
+        & .planete{
+            top: 25%;
+            right: auto;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+
+            & img{
+
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        & .titre{
+            font-size: 2rem;
+        }
+
+        & .information{
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+
+            & a{
+                visibility: visible;
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+
+        & .astronaute{
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, -10%) rotate(0deg);
+            width: 200px;
+            height: 200px;
+        }
+
+        & .arrow{
+            bottom: 5%;
+            left: 100%;
+            transform: rotate(0deg);
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .main-col{
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .card{
+        padding: 1rem;
+        margin : 1rem;
+
+        & .numerals{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        padding: 1rem;
+        margin : 1rem;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    .card{
+        padding: 1rem;
+        margin : 1rem;
+        & .description-line{
+            gap:.3rem;
+        }
+    }
+}
+
+

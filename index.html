@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/main.css">
+    <title>SpaceTraveler</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar"> 
+        <a href="index.html" class="logo"><img src="assets/logo.svg"></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="maps.html" class="link">MAPS</a></li>
+            <li><a href="#Planètes" class="link">PLANÈTES</a></li>
+            <li><a href="us.html" class="link">À PROPOS</a></li>
+            <li><a href="#Contact" class="button">CONTACTER NOUS</a></li>
+          </ul>
+        </div>
+        <img src="assets/navbar/burgerside.svg" alt="menu hamburger" class="menu-hamburger">
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1">
+        <div class="container">
+          <div>
+            <h1>Bienvenue sur SpaceTraveler.
+              <br>Venez vivre une expérience hors du commun</h1>
+          </div>
+        </div>
+      </section>
+      
+      <a name="Planètes"></a>
+      <section class="cards">
+        <div class="carousel">
+          <div class="carousel-container">
+          </div>
+          <button class="carousel-prev">
+            <img src="/assets/button/arrow.svg" alt="">
+          </button>
+          <button class="carousel-next">
+            <img src="/assets/button/arrow.svg" alt="">
+          </button>
+        </div>
+      </section>
+      
+      <a name="Contact"></a>
+      <section id="section3">
+        <div class="container">
+          <form>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom"><br><br>
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom"><br><br>
+            <label for="adresse_email">Adresse e-mail:</label>
+            <input type="email" id="adresse_email" name="adresse_email"><br><br>
+            <label for="telephone">Numéro de téléphone:</label>
+            <input type="tel" id="telephone" name="telephone"><br><br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea><br><br>
+            <input type="submit" value="Soumettre">
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <img class="footer_logo" src="/assets/logo.svg">
+        <nav>
+          <ul>
+            <li><a href="#">© 2023 SpaceTraveler</a></li>
+            <li><a href="us.html" class="link">À propos de nous</a></li>
+            <li><a href="#Contact" class="link">Nous contacter</a></li>
+          </ul>
+        </nav>
+        <img class="footer_lune" src="/assets/planets/map/lune.svg">
+      </div>
+    </footer>
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger")
+      const navLinks = document.querySelector(".nav-links")
+
+      menuHamburger.addEventListener('click', ()=>{
+      navLinks.classList.toggle('mobile-menu')
+      })
+    </script>
+    <script src="src/js/carousel.js"></script>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
