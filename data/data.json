@@ -6,7 +6,7 @@
             "image" :"/assets/planets/map/soleil.svg",
             "superficie" : "6.087 Md",
             "distance" : "150 M",
-            "url":"",
+            "url":"maps/planete.html?nom=Soleil",
             "caracteristiques" : [
                 {
                     "caracteristique_1" : "5 778°C",
@@ -26,7 +26,7 @@
             "image" :"/assets/planets/map/mercure.svg",
             "superficie" : "74.8 M",
             "distance" : "91.69 M",
-            "url":"",
+            "url":"maps/planete.html?nom=Mercure",
             "caracteristiques" : [
                 {
                     "caracteristique_1" : "473°C",
@@ -46,7 +46,7 @@
             "image" :"/assets/planets/map/venus.svg",
             "superficie" : "460.2 M",
             "distance" : "41.40 M",
-            "url":"",
+            "url":"maps/planete.html?nom=Venus",
             "caracteristiques" : [
                 {
                     "caracteristique_1" : "463°C",
@@ -67,7 +67,7 @@
             "image" :"/assets/planets/map/terre.svg",
             "superficie" : "510.1 M",
             "distance" : "0",
-            "url":"",
+            "url":"maps/planete.html?nom=Terre",
             "caracteristiques" : [
                 {
                     "caracteristique_1" : "15°C",
@@ -88,7 +88,7 @@
             "image" :"/assets/planets/map/mars.svg",
             "superficie" : "144.8 M",
             "distance" : "78.34 M",
-            "url":"",
+            "url":"maps/planete.html?nom=Mars",
             "caracteristiques" : [
                 {
                     "caracteristique_1" : "18°C",
@@ -109,7 +109,7 @@
             "image" :"/assets/planets/map/jupiter.svg",
             "superficie" : "61.42 Md",
             "distance" : "628.73 M",
-            "url":"",
+            "url":"maps/planete.html?nom=Jupiter",
             "caracteristiques" : [
                 {
                     "caracteristique_1" : "-128°C",
@@ -129,7 +129,7 @@
             "image" :"/assets/planets/map/saturne.svg",
             "superficie" : "42.7 Md",
             "distance" : "1.275 M",
-            "url":"",
+            "url":"maps/planete.html?nom=Saturn",
             "caracteristiques" : [
                 {
                     "caracteristique_1" : "-125°C",
@@ -149,7 +149,7 @@
             "image" :"/assets/planets/map/uranus.svg",
             "superficie" : "8.083 Md",
             "distance" : "2.723 M",
-            "url":"",
+            "url":"maps/planete.html?nom=Uranus",
             "caracteristiques" : [
                 {
                     "caracteristique_1" : "-210°C",
@@ -169,7 +169,7 @@
             "image" :"/assets/planets/map/neptune.svg",
             "superficie" : "7.68 Md",
             "distance" : "4.351 M",
-            "url":"",
+            "url":"maps/planete.html?nom=Neptune",
             "caracteristiques" : [
                 {
                     "caracteristique_1" : "-200°C",

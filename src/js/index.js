@@ -11,7 +11,7 @@ fetch("/data/data.json")
         const card = `
             <article class="carousel-item card" data-planete="${resultat["planetes"][i]["nom"]}">
                 <div class="planete">
-                    <img src="${resultat["planetes"][i]["image"]}" alt="">
+                    <img src="${resultat["planetes"][i]["image"]}" alt="image de la planete : ${resultat["planetes"][i]["image"]}">
                 </div>
                 <div class="titre">${resultat["planetes"][i]["nom"]}</div>
                 <div class="information">
@@ -27,7 +27,7 @@ fetch("/data/data.json")
                             <span class="numerals-1">KM</span>
                         </div>
                     </div>
-                    <a href="maps.html" class="btn btn-main">En Savoir Plus</a>
+                    <a href="${resultat['planetes'][i]['url']}" class="btn btn-main">En Savoir Plus</a>
                 </div>
                 <div class="astronaute">
                 </div>
