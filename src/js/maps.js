@@ -1,6 +1,5 @@
 let resultat
 const planetes = document.querySelector('.planetes');
-console.log(planetes);
 
 fetch("/data/data.json")
 .then((reponse) => {

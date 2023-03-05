@@ -555,6 +555,8 @@
   list-style: none;
   box-sizing: border-box;
   font-family: "JetBrains Mono", sans-serif;
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
 }
 
 .container {
