@@ -11,7 +11,7 @@ fetch("/data/data.json")
     for (let i = 0; i < resultat["planetes"].length; i++) {
         const card = `
             <article class="planete" data-planete="${resultat["planetes"][i]["nom"]}">
-                <a href="#" title="Direction ${resultat["planetes"][i]["nom"]} !">
+                <a href="maps/planete.html?nom=${resultat["planetes"][i]["nom"]}" title="Direction ${resultat["planetes"][i]["nom"]} !">
                     <img src="${resultat["planetes"][i]["image"]}">
                 </a>
             </article>
