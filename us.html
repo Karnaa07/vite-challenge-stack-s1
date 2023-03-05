@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="assets/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/main.css">
     <link rel="stylesheet" href="dist/us.css">
+
     <title>SpaceTraveler</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar"> 
-          <a href="index.html" class="logo"><img src="assets/logo.svg"></a>
-          <div class="nav-links">
-            <ul>
-              <li><a href="maps.html" class="link">MAPS</a></li>
-              <li><a href="index.html#Planètes" class="link">PLANÈTES</a></li>
-              <li><a href="us.html" class="link">À PROPOS</a></li>
-              <li><a href="index.html#Contact" class="button">CONTACTER NOUS</a></li>
-            </ul>
-          </div>
-          <img src="assets/navbar/burgerside.svg" alt="menu hamburger" class="menu-hamburger">
-        </nav>
-      </header>
+      <nav class="navbar"> 
+        <a href="index.html" class="logo"><img src="assets/logo.svg"></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="maps.html" class="link">MAPS</a></li>
+            <li><a href="maps.html" class="link">PLANÈTES</a></li>
+            <li><a href="us.html" class="link active">À PROPOS</a></li>
+            <li><a href="#Contact" class="button">CONTACTER NOUS</a></li>
+          </ul>
+        </div>
+        <img src="assets/navbar/burgerside.svg" alt="menu hamburger" class="menu-hamburger">
+      </nav>
+    </header>
 
-      <main>
-        <section id="section1">
-            <div class="container">
-              <div>
-                <h1>SpaceTraveler</h1>
-                <br>
-                <h2>Nous sommes quatre étudiants qui ont créé un site web sur
-                    <br>système solaire. Ce site offre des informations 
-                    <br>détaillées sur les planètes, les étoiles et les autres 
-                    <br>corps célestes dans notre système solaire. Il s'agit d'un 
-                    <br>outil pédagogique pour les personnes souhaitant en savoir 
-                    <br>plus sur l'univers qui nous entoure. Le site est conçu 
-                    <br>pour être facile à naviguer et accessible à un large 
-                    <br>public.</h2>
-              </div>
-            </div>
-          </section>
-      </main>
-</body>
-<script>
-  const menuHamburger = document.querySelector(".menu-hamburger")
-  const navLinks = document.querySelector(".nav-links")
+    <main>
+      <h1><a href="/" style="color:white;">SpaceTraveler</a> </h1>
+      <section>
+        <div class="container">
+          <article>
+            <p>
+              Nous sommes quatre étudiants qui ont créé un site web sur le système solaire.<br>
+              Ce site offre des informations détaillées sur les planètes, les étoiles et les autres corps célestes dans notre système solaire.<br>
+              Il s'agit d'un outil pédagogique pour les personnes souhaitant en savoir plus sur l'univers qui nous entoure. Le site est conçu pour être facile à naviguer et accessible à un large public.
+            </p>
+          </article>
+        </div>
+        <img src="assets/astronautes/astroclem-removebg-preview 1.svg" alt="" id="clement">
+        <img src="assets/astronautes/willystronote-removebg-preview 1.svg" alt="" id="willy">
+        <img src="assets/astronautes/qt1-removebg-preview 1.svg" alt="" id="quentin">
+        <img src="assets/astronautes/astrojo-removebg-preview 1.svg" alt="" id="joel">
+        <img src="assets/astronautes/image-removebg 3.svg" alt="" id="astro">
+      </section>
+      
+    </main>
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger")
+      const navLinks = document.querySelector(".nav-links")
 
-  menuHamburger.addEventListener('click', ()=>{
-  navLinks.classList.toggle('mobile-menu')
-  })
-</script>
+      menuHamburger.addEventListener('click', ()=>{
+      navLinks.classList.toggle('mobile-menu')
+      })
+    </script>
+  </body>
 </html>

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,600;0,700;0,800;1,400&display=swap"); /*PADDING*/
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,600;0,700;0,800;1,400&display=swap");
 .p-1 {
   padding: 0.25rem;
 }
@@ -550,132 +549,81 @@
 }
 
 *, ::before, ::after {
-  padding: 0;
   margin: 0;
-  text-decoration: none;
-  list-style: none;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "JetBrains Mono", sans-serif;
 }
 
-.navbar {
-  position: absolute;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-}
-
-.navbar a {
-  color: #A11BA4;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar .nav-links ul {
-  display: flex;
-}
-
-.navbar .nav-links ul li {
-  margin: 0 80px;
-}
-
-.navbar .nav-links ul li.active a {
-  color: #640F66;
-}
-
-.navbar .menu-hamburger {
-  display: none;
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  width: 35px;
-}
-
-@media screen and (max-width: 900px) {
-  .navbar {
-    padding: 0;
-  }
-  .navbar .logo {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-  }
-  .navbar .menu-hamburger {
-    display: block;
-  }
-  .nav-links {
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100%;
-    transition: all 1s ease-in-out;
-  }
-  .nav-links.mobile-menu {
-    margin-left: 0;
-  }
-  .nav-links ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar .nav-links ul li {
-    margin: 25px 0;
-    font-size: 1.2em;
-  }
-}
-.container {
-  max-width: 1170px;
-  margin: auto;
-}
-
-#section1 {
-  height: 100vh;
-  padding-top: 30px;
-  color: #F6F6F6;
+main {
   background-image: url(/assets/background/background_us.svg);
   background-size: cover;
-  background-position: center right;
-}
-
-#section1 h1 {
-  font-size: 48px;
-  margin: 0;
-  text-align: center;
-}
-
-#section1 h2 {
-  font-size: 25px;
-  text-align: center;
-}
-
-#section1 .container {
-  height: 100%;
+  background-position: center;
+  overflow: hidden;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-}
-
-#section1 .container div {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 200px;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  gap: 3rem;
+}
+
+section {
+  position: relative;
+}
+
+img {
+  position: absolute;
+}
+
+img#clement {
+  top: -10%;
+  left: -10%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+img#willy {
+  top: -10%;
+  right: 0;
+  transform: translate(50%, -50%);
+  z-index: 0;
+}
+
+img#quentin {
+  bottom: -90%;
+  right: 10%;
+  transform: translate(50%, -50%);
+}
+
+img#joel {
+  bottom: -90%;
+  right: 0%;
+  transform: translate(50%, -50%);
+  z-index: 0;
+}
+
+img#astro {
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+  border: none;
+  z-index: 0;
+}
+
+article {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid #000000;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2;
 }
 
 .button {
@@ -688,20 +636,10 @@
   background-color: #c3c3c3;
 }
 
-*, ::before, ::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .container-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.planete#soleil {
-  background-image: url("/assets/card/soleil.svg");
 }
 
 a:hover {
@@ -779,14 +717,16 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 .card .planete {
+  position: relative;
   top: 0;
   right: 0;
   position: absolute;
   transform: translate(50%, -50%) rotate(-45deg);
+  transition: all 0.5s ease-in-out;
+}
+.card .planete img {
   height: 200px;
   width: 200px;
-  background-image: url("/assets/card/soleil.svg");
-  background-size: cover;
   transition: all 0.5s ease-in-out;
 }
 .card .description {
@@ -817,10 +757,11 @@ a:hover {
   top: 25%;
   right: auto;
   left: 50%;
-  position: absolute;
   transform: translate(-50%, -50%) rotate(0deg);
-  height: 250px;
+}
+.card:hover .planete img {
   width: 250px;
+  height: 250px;
 }
 .card:hover .titre {
   font-size: 2rem;
@@ -849,32 +790,6 @@ a:hover {
   transform: rotate(0deg);
 }
 
-.cta {
-  color: #F6F6F6;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.cta button {
-  padding: 0.2rem 0.5rem;
-}
-
-.cta-container {
-  display: flex;
-  justify-content: space-between;
-}
-.cta-container .left {
-  display: flex;
-  justify-content: flex-start;
-}
-.cta-container .center {
-  display: flex;
-  justify-content: center;
-}
-.cta-container .right {
-  display: flex;
-  justify-content: flex-end;
-}
-
 @media screen and (min-width: 1024px) {
   .main-col {
     max-width: 1100px;
@@ -884,10 +799,8 @@ a:hover {
 }
 @media screen and (min-width: 769px) {
   .card {
-    flex: 0 0 auto;
-    width: calc(33.3333333333% - 1rem);
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 1rem;
   }
   .card .numerals {
     font-size: 1rem;
@@ -895,18 +808,14 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .card {
-    flex: 0 0 auto;
     padding: 1rem;
-    margin: 0.5rem;
-    width: calc(50% - 1rem);
+    margin: 1rem;
   }
 }
 @media screen and (max-width: 450px) {
   .card {
-    flex: 0 0 auto;
-    width: calc(100% - 1rem);
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 1rem;
   }
   .card .description-line {
     gap: 0.3rem;
@@ -930,6 +839,23 @@ a:hover {
 }
 .link:hover::after {
   transform: scaleX(100%);
+}
+
+.active {
+  display: block;
+  position: relative;
+}
+.active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: currentColor;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: scaleX(100%);
+  transition: all 0.3s ease-in-out;
+  transform-origin: left center;
 }
 
 /*# sourceMappingURL=us.css.map */
