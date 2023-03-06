@@ -1,5 +1,5 @@
 .button {
     padding: 1rem 2rem;
-    @include btn_color($main-white);
+    @include btn_color($main-light-gray);
     border-radius: 1rem;
 }
