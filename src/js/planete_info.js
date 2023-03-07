@@ -25,7 +25,7 @@ fetch("/data/data.json")
     const dataPlanete = `
         <div class="cta">
             <figure>
-                <img src="/assets/planets/map/${planete.nom}.svg" alt="" class="logo-planete" title="planete : ${planete.nom}">
+                <img src="${planete.image}" alt="" class="logo-planete" title="planete : ${planete.nom}">
                 <figcaption>
                     <a href="/maps.html">
                         <img src="/assets/card/arrow-right.svg" alt="" class="arrow-left">
