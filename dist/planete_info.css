@@ -148,4 +148,23 @@ body {
   margin: auto;
 }
 
+@media screen and (max-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+  .planete_info_grid {
+    flex-direction: column;
+  }
+  .planete_infos {
+    grid-template-rows: 5% 1fr 1fr;
+    width: 100%;
+  }
+  .planete_infos .container-infos-logo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .planete_infos .container-infos-description {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /*# sourceMappingURL=planete_info.css.map */
