@@ -46,7 +46,7 @@
             "image" :"/assets/planets/map/venus.svg",
             "superficie" : "460.2 M",
             "distance" : "41.40 M",
-            "url":"maps/planete.html?nom=Venus",
+            "url":"maps/planete.html?nom=Vénus",
             "caracteristiques" : [
                 {
                     "caracteristique_1" : "463°C",
