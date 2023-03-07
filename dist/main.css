@@ -569,6 +569,10 @@ body {
   margin: 0;
 }
 
+body.overflow-hidden {
+  overflow: hidden;
+}
+
 header {
   width: 100%;
   top: 0;
@@ -583,8 +587,8 @@ header {
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
-  background: rgba(4, 1, 44, 0.7);
-  backdrop-filter: blur(10px);
+  background: rgba(254, 254, 254, 0.5);
+  backdrop-filter: blur(30px);
 }
 
 .navbar a {

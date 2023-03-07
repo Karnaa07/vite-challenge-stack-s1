@@ -9,7 +9,7 @@ fetch("/data/data.json")
     resultat = data 
     for (let i = 0; i < resultat["planetes"].length; i++) {
         const card = `
-            <article class="carousel-item card" data-planete="${resultat["planetes"][i]["nom"]}">
+            <article class="carousel-item card" data-planete="${resultat["planetes"][i]["nom"]}" style="width : 100%" >
                 <div class="planete">
                     <img src="${resultat["planetes"][i]["image"]}" alt="image de la planete : ${resultat["planetes"][i]["image"]}">
                 </div>
